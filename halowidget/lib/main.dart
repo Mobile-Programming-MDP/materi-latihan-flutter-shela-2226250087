@@ -10,16 +10,25 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title:"Halo Widget",
+      title: "Shela",
       theme: ThemeData(primarySwatch: Colors.blue),
-      home:Scaffold(
-        appBar: AppBar(
-          title: const Text("Shela"),
-      ),
-      body: const Center(
-        child: Text("Halo Shela"),
-      ),
-   ));
+      home: firstScreen()
+    );
   }
 }
 
+class firstScreen extends StatelessWidget {
+  const firstScreen({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+        appBar: AppBar(
+          title: const Text("Halo Shela"),
+        ),
+        body: const Center(
+          child: Text("Halo Shela"),
+       ),
+    );
+  }
+}
