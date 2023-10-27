@@ -122,7 +122,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
                             onPressed: () {},
                             child: Text('Sign Out'),
                             style: TextButton.styleFrom(
-                                backgroundColor: Colors.deepPurple,
+                                backgroundColor: Colors.blue,
                                 padding: const EdgeInsets.all(20),
                                 elevation: 5),
                           )
@@ -130,7 +130,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
                             onPressed: () {},
                             child: Text('Sign In'),
                             style: TextButton.styleFrom(
-                                backgroundColor: Colors.deepPurple,
+                                backgroundColor: Colors.white,
                                 padding: const EdgeInsets.all(20),
                                 elevation: 5),
                           )
