@@ -4,6 +4,7 @@ import 'package:wisata_candi/screens/detail_screen.dart';
 import 'package:wisata_candi/screens/profile_screen.dart';
 import 'package:wisata_candi/screens/search_screen.dart';
 import 'package:wisata_candi/screens/sign_in_screen.dart';
+import 'package:wisata_candi/screens/home_screen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -26,7 +27,7 @@ class MyApp extends StatelessWidget {
           ),
         ),
         colorScheme:
-        ColorScheme.fromSeed(seedColor: Colors.deepPurple).copyWith(
+            ColorScheme.fromSeed(seedColor: Colors.deepPurple).copyWith(
           primary: Colors.deepPurple,
           surface: Colors.deepPurple[50],
         ),
@@ -34,7 +35,8 @@ class MyApp extends StatelessWidget {
       ),
       // home: const ProfileScreen(),
       // home: ProfileScreen(),
-      home: SearchScreen(),
+      // home: SearchScreen(),
+      home: HomeScreen(),
       //home: DetailScreen(candi: candiList[0]),
     );
   }
