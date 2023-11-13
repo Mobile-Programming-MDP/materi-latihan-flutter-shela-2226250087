@@ -31,7 +31,7 @@ class ItemCard extends StatelessWidget {
               ),
             ),
           ),
-//TODO: 4 Buat Text sebagai anak dari column
+  //TODO: 4 Buat Text sebagai anak dari column
           Padding(
             padding: EdgeInsets.only(left: 16, top: 8),
             child: Text(
@@ -42,7 +42,7 @@ class ItemCard extends StatelessWidget {
               ),
             ),
           ),
-//TODO: 5 Buat text sebagai anak dari column
+  //TODO: 5 Buat text sebagai anak dari column
           Padding(
             padding: EdgeInsets.only(left: 16, top: 8),
             child: Text(
