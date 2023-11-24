@@ -9,11 +9,22 @@ class ProfileScreen extends StatefulWidget {
 }
 
 class _ProfileScreenState extends State<ProfileScreen> {
-  bool isSignedIn = true;
-  String fullName = 'Shela';
-  String userName = 'shelamdp';
-  int favoriteCandiCount = 9;
+  bool isSignedIn = false;
+  String fullName = '';
+  String userName = '';
+  int favoriteCandiCount = 0;
+  late Color iconColor;
 
+  void signIn() {
+    // setState((){
+    //  isSignedIn = true;
+    //  fullName = 'Christian Bautista';
+    //  userName = 'christianb';
+    //  favoriteCandiCount = 2;
+    // });
+    Navigator.pushNamed(context, '/signin');
+  }
+  
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -23,7 +34,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
           Container(
             height: 200,
             width: double.infinity,
-            color: Colors.purple,
+            color: Colors.amber,
           ),
           Column(
             children: [
@@ -122,7 +133,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
                             onPressed: () {},
                             child: Text('Sign Out'),
                             style: TextButton.styleFrom(
-                                backgroundColor: Colors.blue,
+                                backgroundColor: Colors.amber,
                                 padding: const EdgeInsets.all(20),
                                 elevation: 5),
                           )
@@ -130,7 +141,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
                             onPressed: () {},
                             child: Text('Sign In'),
                             style: TextButton.styleFrom(
-                                backgroundColor: Colors.white,
+                                backgroundColor: Colors.amber,
                                 padding: const EdgeInsets.all(20),
                                 elevation: 5),
                           )
