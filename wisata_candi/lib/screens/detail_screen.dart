@@ -115,7 +115,7 @@ class _DetailScreenState extends State<DetailScreen> {
                   const SizedBox(
                     height: 16,
                   ),
-            // info atas (nama candi dan tombol favorit
+                  // info atas (nama candi dan tombol favorit
                   Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
@@ -139,7 +139,7 @@ class _DetailScreenState extends State<DetailScreen> {
                       )
                     ],
                   ),
-                // info tengah (lokasi, dibangun, tipe)
+                  // info tengah (lokasi, dibangun, tipe)
                   const SizedBox(
                     height: 16,
                   ),

@@ -69,6 +69,7 @@ class _MainScreenState extends State<MainScreen> {
     FavoriteScreen(),
     ProfileScreen(),
   ];
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -76,50 +77,48 @@ class _MainScreenState extends State<MainScreen> {
       body: _children[_currentIndex],
       // TODO: 3. Buat properti bottomNavigatorBar dengan nilai Theme
       bottomNavigationBar: Theme(
-        // TODO: 4. Buat data dan child dari Theme
-        data: Theme.of(context).copyWith(
-          canvasColor: Colors.deepPurple[50],
-        ),
-        child: BottomNavigationBar(
-          type: BottomNavigationBarType.fixed,
-          currentIndex: _currentIndex,
-          onTap: (index) {
-            setState(() {
-              _currentIndex = index;
-            });
-          },
-          items: [
-            BottomNavigationBarItem(
-                icon: Icon(
-                  Icons.home,
-                  color: Colors.deepPurple,
-                ),
-                label: 'Home'),
-            BottomNavigationBarItem(
-                icon: Icon(
-                  Icons.search,
-                  color: Colors.deepPurple,
-                ),
-                label: 'Search'),
-            BottomNavigationBarItem(
-                icon: Icon(
-                  Icons.favorite,
-                  color: Colors.deepPurple,
-                ),
-                label: 'Favorite'),
-            BottomNavigationBarItem(
-                icon: Icon(
-                  Icons.person,
-                  color: Colors.deepPurple,
-                ),
-                label: 'Profile'),
-          ],
-          selectedItemColor: Colors.deepPurple,
-          unselectedItemColor: Colors.deepPurple[100],
-          showUnselectedLabels: true,
-        )
-      ),
+          // TODO: 4. Buat data dan child dari Theme
+          data: Theme.of(context).copyWith(
+            canvasColor: Colors.deepPurple[50],
+          ),
+          child: BottomNavigationBar(
+            type: BottomNavigationBarType.fixed,
+            currentIndex: _currentIndex,
+            onTap: (index) {
+              setState(() {
+                _currentIndex = index;
+              });
+            },
+            items: [
+              BottomNavigationBarItem(
+                  icon: Icon(
+                    Icons.home,
+                    color: Colors.deepPurple,
+                  ),
+                  label: 'Home'),
+              BottomNavigationBarItem(
+                  icon: Icon(
+                    Icons.search,
+                    color: Colors.deepPurple,
+                  ),
+                  label: 'Search'),
+              BottomNavigationBarItem(
+                  icon: Icon(
+                    Icons.favorite,
+                    color: Colors.deepPurple,
+                  ),
+                  label: 'Favorite'),
+              BottomNavigationBarItem(
+                  icon: Icon(
+                    Icons.person,
+                    color: Colors.deepPurple,
+                  ),
+                  label: 'Profile'),
+            ],
+            selectedItemColor: Colors.deepPurple,
+            unselectedItemColor: Colors.deepPurple[100],
+            showUnselectedLabels: true,
+          )),
     );
   }
 }
-
